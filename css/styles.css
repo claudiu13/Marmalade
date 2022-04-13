@@ -11515,7 +11515,6 @@ html {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 90%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
@@ -11535,7 +11534,6 @@ html {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 60%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
