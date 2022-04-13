@@ -100,7 +100,7 @@
                 <!-- Portfolio Grid Items-->
                 <div class="row justify-content-center">
                     <!-- Portfolio Item 1-->
-                    <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="col-md-6 col-lg-3 mb-5">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
@@ -109,7 +109,7 @@
                         </div>
                     </div>
                     <!-- Portfolio Item 2-->
-                    <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="col-md-6 col-lg-3 mb-5">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
@@ -118,7 +118,7 @@
                         </div>
                     </div>
                     <!-- Portfolio Item 3-->
-                    <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="col-md-6 col-lg-3 mb-5">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
@@ -126,8 +126,76 @@
                             <img class="img-fluid" src="assets/img/portfolio/3.png" alt="..." />
                         </div>
                     </div>
+                                        <!-- Portfolio Item 4-->
+                                        <div class="col-md-6 col-lg-3 mb-5">
+                                            <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+                                                <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                                    <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                                                </div>
+                                                <img class="img-fluid" src="assets/img/portfolio/4.png" alt="..." />
+                                            </div>
+                                        </div>
 
                 </div>
+
+                <!DOCTYPE html>
+
+
+
+		
+		<!-- amCharts javascript sources -->
+		<script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+		<script type="text/javascript" src="https://www.amcharts.com/lib/3/pie.js"></script>
+		
+
+		<!-- amCharts javascript code -->
+		<script type="text/javascript">
+			AmCharts.makeChart("chartdiv",
+				{
+					"type": "pie",
+					"angle": 47.7,
+					"balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+					"depth3D": 20,
+					"innerRadius": 0,
+					"baseColor": "#2B8168",
+					"titleField": "country",
+					"valueField": "litres",
+					"fontSize": 12,
+					"theme": "default",
+					"allLabels": [],
+					"balloon": {},
+					"titles": [],
+					"dataProvider": [
+						{
+							"country": "Presale",
+							"litres": "51"
+						},
+						{
+							"country": "Liquidity",
+							"litres": "34"
+						},
+						{
+							"country": "Locked",
+							"litres": "7"
+						},
+						{
+							"country": "Private",
+							"litres": "3"
+						},
+						{
+							"country": "Team",
+							"litres": "5"
+						}
+					]
+				}
+			);
+		</script>
+
+
+		<div id="chartdiv" style="width: 100%; height: 400px; background-color: #FFFFFF;" ></div>
+
+
+
             </div>
         </section>
         <!-- About Section-->
@@ -143,17 +211,17 @@
                 </div>
                 <!-- About Section Content-->
                 <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead">$MADA is a community-driven reflections token on the Binance Smart Chain. Holders have the opportunity to earn ADA coin passive income</p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead">
-                        &#8226; &nbsp;Private sale on X April 2022 19:00PM UTC<br><br>
-                        &#8226; &nbsp;Pre-sale - Monday X April 19:00PM UTC<br><br>
-                        &#8226; &nbsp;Launch Monday X April 19:00PM UTC<br><br>
-                        *Ownership will be renounced as soon as presale ends.</p></div>
+                    <div class="col-lg-5 ms-auto"><p class="lead">$MADA is a community-driven reflections token on the Binance Smart Chain. Holders have the opportunity to earn ADA coin passive income</p></div>
+                    <div class="col-lg-5 me-auto"><p class="lead">
+                        &#8226; &nbsp;Private Sale: on April 14th, 2022 19:00PM UTC<br>
+                        &#8226; &nbsp;Pre-sale: April 27th, 2022 19:00PM UTC<br>
+                        &#8226; &nbsp;Launch: May 1st, 2022 19:00PM UTC<br>
+                        *Ownership will be renounced as soon as presale starts.</p></div>
                 </div>
                 <!-- About Section Button-->
                 <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">
-                        <i class="fas fa-download me-2"></i>
+                    <a class="btn btn-xl btn-outline-light" href="https://t.me/MarmalAda_Official">
+                        <i class="fas fa-basket-shopping me-2"></i>
                         Buy now!
                     </a>
                 </div>
@@ -181,8 +249,11 @@
                         <!-- https://startbootstrap.com/solution/contact-forms-->
                         <!-- to get an API token!-->
                         <div class="row">
-                            <div class="col-lg-4 ms-auto"><p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p></div>
-                            <div class="col-lg-4 me-auto"><p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p></div>
+                            <div class="col-lg-4 ms-auto"><p class="lead">The Audit is conducted by SafuAudit.</p></div>
+                            <div class="col-lg-4 me-auto"><p class="lead">The KYC is done through SafuAudit platform with AI additionally checks.</p></div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <img src="assets/img/safuaudit-logo4.png" alt="" style="width: 450px;">
                         </div>
                     </div>
                 </div>
@@ -194,25 +265,20 @@
                 <div class="row">
                     <!-- Footer Location-->
                     <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Location</h4>
-                        <p class="lead mb-0">
-                            2215 John Daniel Drive
-                            <br />
-                            Clark, MO 65243
-                        </p>
+
                     </div>
                     <!-- Footer Social Icons-->
                     <div class="col-lg-4 mb-5 mb-lg-0">
                         <h4 class="text-uppercase mb-4">Social</h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-telegram"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://t.me/MarmalAda_Official"><i class="fab fa-fw fa-telegram"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://twitter.com/MarmalAda_Token"><i class="fab fa-fw fa-twitter"></i></a>
                     </div>
                     <!-- Footer About Text-->
                     <div class="col-lg-4">
                         <h4 class="text-uppercase mb-4">About MarmalADA</h4>
                         <p class="lead mb-0">
-                            MarmalADA is a community driven token, with renounced ownership, 10% ADA reflections. Join the 
-                            <a href="">Presale</a>
+                            MarmalADA is a community driven token, with renounced ownership, 8% ADA reflections. Join the 
+                            <a href="https://t.me/MarmalAda_Official">Private sale</a>
                             now.
                         </p>
                     </div>
@@ -221,7 +287,7 @@
         </footer>
         <!-- Copyright Section-->
         <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Copyright &copy; Your Website 2022</small></div>
+            <div class="container"><small>Copyright &copy; MarmalAda Token 2022</small></div>
         </div>
         <!-- Portfolio Modals-->
         <!-- Portfolio Modal 1-->
