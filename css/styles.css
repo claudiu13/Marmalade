@@ -11649,3 +11649,6 @@ img {
   -ms-flex-align: center;
   align-items: center;
 }
+#chartdiv > div > div > a{
+  display: none !important;
+}
